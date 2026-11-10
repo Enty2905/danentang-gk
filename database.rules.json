@@ -1,0 +1,31 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "users": {
+      ".read": "auth != null && auth.uid === 'Zc5USwjC6sQnMyHTr0ELBfVsjdO2'",
+      ".write": "auth != null && auth.uid === 'Zc5USwjC6sQnMyHTr0ELBfVsjdO2'",
+      "$userKey": {
+        ".validate": "newData.hasChildren(['email', 'matkhau', 'hoten', 'hinhanh'])",
+        "email": {
+          ".validate": "newData.isString() && newData.val().length <= 254 && newData.val().matches(/^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}$/)"
+        },
+        "matkhau": {
+          ".validate": "newData.isString() && newData.val().matches(/^pbkdf2-sha256\\$210000\\$[a-f0-9]{32}\\$[a-f0-9]{64}$/)"
+        },
+        "hoten": {
+          ".validate": "newData.isString() && newData.val().length > 0 && newData.val().length <= 100 && newData.val().matches(/.*[^ ].*/)"
+        },
+        "hinhanh": {
+          ".validate": "newData.isString() && newData.val().length <= 350000 && newData.val().matches(/^data:image\\/jpeg;base64,[A-Za-z0-9+\\/]+={0,2}$/)"
+        },
+        "$other": {
+          ".validate": false
+        }
+      }
+    },
+    "$other": {
+      ".validate": false
+    }
+  }
+}
