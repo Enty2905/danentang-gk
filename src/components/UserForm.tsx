@@ -66,7 +66,7 @@ export function UserForm({ existing, busy, onSave, onCancel }: Props) {
 const styles = StyleSheet.create({
   card: { backgroundColor: '#fff', borderWidth: 1, borderColor: colors.border, borderRadius: 14, padding: 22 },
   heading: { color: colors.ink, fontSize: 19, fontWeight: '700', marginBottom: 22 }, label: { color: colors.ink, fontSize: 14, fontWeight: '600', marginBottom: 8 },
-  imageArea: { flexDirection: 'row', gap: 16, alignItems: 'center', marginBottom: 22 }, preview: { width: 88, height: 88, borderRadius: 10, backgroundColor: colors.lightGreen },
+  imageArea: { flexDirection: 'row', gap: 16, alignItems: 'center', marginBottom: 22 }, preview: { width: 88, height: 88, borderRadius: 10, backgroundColor: colors.primarySoft },
   placeholder: { width: 88, height: 88, borderRadius: 10, backgroundColor: colors.background, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center' }, hint: { color: colors.muted, fontSize: 12 },
   error: { color: colors.danger, fontSize: 13, lineHeight: 20, marginBottom: 16 }, actions: { flexDirection: 'row', gap: 10, flexWrap: 'wrap' },
 });

@@ -1,9 +1,10 @@
 export const colors = {
-  background: '#f8f9f5',
-  ink: '#1f332b',
-  green: '#285b47',
-  lightGreen: '#e6eee3',
-  muted: '#748077',
-  border: '#e1e6dc',
-  danger: '#b54435',
+  background: '#f3f7ff',
+  ink: '#0f172a',
+  primary: '#2563eb',
+  primarySoft: '#dbeafe',
+  muted: '#64748b',
+  border: '#dbe5f0',
+  danger: '#b91c1c',
+  overlay: '#0f172a80',
 };
